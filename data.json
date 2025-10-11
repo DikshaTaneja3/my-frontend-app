@@ -1,0 +1,25 @@
+{
+statusCode: 0,
+data: {
+statusMessage: "done successfully",
+cards: [
+{},
+{},
+{},
+{},
+{
+groupedCard: {
+cardGroupMap: {
+REGULAR: {}
+}
+}
+}
+],
+firstOffsetRequest: true,
+isQCLink: false
+},
+tid: "1bc6d3a9-f180-4fe7-ba66-5fad4a28c1f2",
+sid: "nd19df1f-93c3-4886-a259-4eb8e9aefcb2",
+deviceId: "0ae24172-dfdb-255f-e551-586b3fd5df52",
+csrfToken: "63VVLdPC5qYo-IwTwAwnqDt76UDPw5iNbwMlMKf4"
+}
