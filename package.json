@@ -1,0 +1,32 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "This is learning react topics",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DikshaTaneja3/my-frontend-app.git"
+  },
+  "keywords": [],
+  "author": "Diksha Taneja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DikshaTaneja3/my-frontend-app/issues"
+  },
+  "homepage": "https://github.com/DikshaTaneja3/my-frontend-app#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^6.30.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
