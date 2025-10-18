@@ -43,6 +43,8 @@ const Body = () => {
                     <input 
                         type="text" 
                         className="border border-solid border-black" 
+                        placeholder="Search"
+                        data-testid="searchInput"
                         value={searchText}
                         onChange={(e)=> {
                             setSearchText(e.target.value)
@@ -63,9 +65,9 @@ const Body = () => {
                     <button 
                         className="px-4 py-2 bg-gray-500 text-white rounded-lg m-4" onClick={ () => {
                         const filterList = listOfRestaurants.filter((res) => {
-                            return res?.info.avgRating > 4;
+                            return res?.card?.card?.info.avgRating > 4;
                         })
-                        setListOfRestaurants(filterList);
+                        setFilteredRestaurants(filterList);
                         console.log("Button clicked", filterList);
                     }} 
                     >
@@ -76,6 +78,7 @@ const Body = () => {
                     <label>UserName: </label>
                     <input 
                         className="border border-black p-2"
+                        placeholder="userName"
                         value={loggedInUser}
                         onChange={(e)=>setUserName(e.target.value)}
                     />

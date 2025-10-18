@@ -4,6 +4,7 @@ import UserContext from "../utils/UserContext";
 
 const RestaurantCard = (props) => {
     const { resData } = props;
+    console.log(resData);
     const { 
         name, 
         cuisines, 
@@ -15,7 +16,7 @@ const RestaurantCard = (props) => {
     } = resData?.card?.card?.info;
     const { loggedInUser } = useContext(UserContext)
     return (
-        <div className="m-4 p-4 w-[300px] rounded-lg bg-white drop-shadow-md hover:bg-gray-700">
+        <div data-testid="resCard" className="m-4 p-4 w-[300px] rounded-lg bg-white drop-shadow-md hover:bg-gray-700">
             <img className="res-logo w-full h-32 rounded-lg" alt="res-logo" src={ CDN_URL + cloudinaryImageId }/>
             <div className="res-content wrap-break-word">
                 <h3 className="font-bold py-2 text-lg">{name}</h3>

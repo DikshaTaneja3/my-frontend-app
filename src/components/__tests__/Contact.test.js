@@ -5,6 +5,22 @@ import "@testing-library/jest-dom";
 // this is the describe block which wrapping all test cases
 describe("Contact Us Page Test Cases", () => {
     // it() and test() fn are the same thing
+    beforeAll(()=> {
+        console.log("Run Before All Test Case");
+    });
+
+    beforeEach(()=> {
+        console.log("Run Before Each Test Case");
+    });
+
+    afterAll(()=> {
+        console.log("It will run after all Test Case");
+    });
+
+    afterEach(()=> {
+        console.log("It will run after each Test Case");
+    });
+
     it("should load contact us component", () => {
         render(<Contact />)
     
